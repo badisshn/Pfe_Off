@@ -1,0 +1,24 @@
+
+<odoo>
+    <data>
+
+        <record id="view" model="ir.ui.view">
+            <field name="name"></field>
+            <field name="model"></field>
+            <field name="arch" type="xml">
+                <tree>
+
+                    <field name="date_de_naissance"/>
+                    <field name="age"/>
+
+
+                    <field name="context">{'search_default_group_by_date_de_naissance': 1}</field>
+                    <field name="order">date_de_naissance desc</field>
+                    <field name="create">false</field>
+                    <field name="edit">false</field>
+                    <field name="delete">false</field>
+                </tree>
+            </field>
+        </record>
+    </data>
+</odoo>
